@@ -1,3 +1,8 @@
+//~ comments 100413
+//~ Programming Assignments General Requirements (PAGR)
+//~ General Assignment Grading Rubric (GAGR)
+//~ Programming Assignment 2 (PA2)
+
 #include <stdio.h>
 
 int sumOfDivisors (int number);
@@ -6,15 +11,35 @@ void printResult (int num1, int num2, int num3);
 
 int main(void) {
 
-   int x;
+//
+//~  See PAGR 2.d and GAGR, 5pts  x is descriptive ?
+//~  Is a variable declaration here considered a global variable? 
+//
+
+   int x;	
 
    printf("Enter a positive integer (or zero to quit):\n");
+
+//
+//~  according to PA2, page 3, is should look like the below
+//~  printf ("==== Enter a positive integer (zero to quit): ====\n");
+//
+
    scanf("%d",&x);
+
+//
+//~ how are you catching the '0' to exit?
+
+//~ how are you handling incorrect data entry - PA2, page 3?
+//
 
    sumOfDivisors(x);
    factorial(x);
    printResult();
 
+//
+//~ after this runs one time, how are you propting for next entry? PA2, page 3?
+//
 
 }  // end of main
 
@@ -64,6 +89,10 @@ void printResult (int num1, int num2, int num3) {
         printf("The sum of the divisors for %d is: %d which is perfect\n",
         num1, num2);
    }  // end else
-   
+
+//
+//~ you aren't printing the factorial, PA2, page 3
+//  
+ 
 }  // end printResult
 
