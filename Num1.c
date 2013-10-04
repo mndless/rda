@@ -34,7 +34,15 @@ int main(void) {
 //
 
    sumOfDivisors(x);
+
+//~ your function returns the value 'sum', what are you assigning that to?
+
    factorial(x);
+
+//~ your fuction returns 'number', your assigning it to what?
+
+//~ your aren't sending printResult, the 3 numbers it expects 
+
    printResult();
 
 //
