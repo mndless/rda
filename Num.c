@@ -3,6 +3,7 @@
 //
 //
 //////////////////////////////////////////////
+#include <stdio.h>
 
 int sumOfDivisors(int number);
 int factorial (int number);
