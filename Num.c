@@ -11,6 +11,7 @@ void printResult (int num1, int num2, int num3);
 
 int main() {
     int value=1;            // collect user entered int value
+    printf ("\n\n");        // make room below command line at start
     while (value >= 1) {
         printf ("==== Enter a positive integer (zero to quite): ====\n");
         scanf  ("%i", &value);
@@ -25,6 +26,10 @@ int main() {
             } // end if value < 0
         }// end if value
     } // end while value
+
+    printf ("\n\nThanks for playing...\n\n    Rachael\n\n");	
+
+    return(0);
 } // end main
 
 int sumOfDivisors(int number) {
@@ -51,9 +56,9 @@ int factorial (int number) {
 
 void printResult (int num1, int num2, int num3) {
     printf ("\nThe sum of the divisors for %i is %i, ", num1, num2);
-    if ((num1*2) > num2) {
+    if ((num1*2) < num2) {
         printf (" which is Abundant\n");
-    } else if ((num1*2) < num2) {
+    } else if ((num1*2) > num2) {
         printf (" which is Deficient\n");
     } else if ((num1*2) == num2) {
         printf (" which is Perfect\n");
