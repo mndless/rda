@@ -23,7 +23,7 @@ static void checkSize(int dim)
    } // end if dim
 } // end checkSize
 
-int readImageHeader( char * file_name ) {
+int readImageHeader( char  file_name ) {
 
        FILE * file = fopen( file_name, "r" );
 
@@ -127,7 +127,7 @@ static void rotateImage( char * file_name ) {
 int main ( int argc, char *argv[] ) {
 
     int debug = 1;
-    char * fname;
+    char fname;
     char selection;
 
     sscanf(argv[1], "%c", &selection);
